@@ -1,4 +1,5 @@
 # Brief-2
+
 ## Contexte du projet
 Dans le cadre d’améliorer son site votre client va vous fournir le code source de son site
 
@@ -10,6 +11,7 @@ Vous êtes amené à
 * Développez en HTML/CSS les deux pages ajoutées en respectant la maquette réalisée.
 * Proposer un contenu adéquat pour le site (texte, photos).
 * Respecter l'UX/UI et le responsive desgin.
+
 ## Modalités pédagogiques
 Travail à titre individuel
 
