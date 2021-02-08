@@ -1589,7 +1589,38 @@ text-align: center;
 }
 
 
+.Events {
+    background-color: #fff;
+    
+}
+.Events .titlepage {
+    text-align: center;
+    padding-bottom: 65px;
+}
+.Events .titlepage h2 {
+    padding: 0px 0px 20px 0px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #b32137;
+    line-height: 50px;
+}
 
+.Events .titlepage span {
+   color:#141012; 
+    font-size: 17px;
+    line-height: 32px;
+}
+
+
+.Events .book-box figure {margin: 0px;} 
+
+.Events p {
+    padding: 30px 46px;
+color: #141012;
+font-size: 17px;
+line-height: 30px;
+text-align: center;
+}
 
 
 
@@ -1771,10 +1802,10 @@ margin-top: 90px;
 }
 
 
-.Books-bg .titlepage {margin-top: 90px;}
+.Events-bg .titlepage {margin-top: 90px;}
 
 
-.Books-bg .read-more { margin-bottom: 90px; } 
+.Events-bg .read-more { margin-bottom: 90px; } 
  .about-bg .abouttitle h2 {
      color: #fff;
      text-transform: uppercase;
