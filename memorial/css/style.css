@@ -1625,9 +1625,13 @@ text-align: center;
 
 /* Float four columns side by side */
 .column {
-    float: left;
     width: 100%;
     padding: 0 10px;
+  }
+  .column h2{
+    font-weight: 600;
+    color: #B32137;
+    font-size: 40px;
   }
   
   /* Remove extra left and right margins, due to padding */
@@ -1635,9 +1639,13 @@ text-align: center;
   .card {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      
   }
   
+
+
   
   
   
@@ -1677,9 +1685,12 @@ text-align: center;
     text-align: center;
     background-color: #ffffff;
     margin-bottom: 10px;
+    border-radius: 50px;
     
   }
  
+
+
  .contact_form {
      background: #114c7d;
      padding: 45px;
