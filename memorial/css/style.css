@@ -1633,14 +1633,23 @@ text-align: center;
       flex-direction: row;
 
   }
+    .card .image{
+        flex: 40%;
+        width: 100%;
+        float:none;
+    }
 
+    .card .content{
+        flex: 60%;
+    }
   
   /* Responsive columns */
   @media screen and (max-width: 600px) {
       .card {
-          flex-direction: rows;
+          flex-direction:column;
           flex-wrap: wrap;
           align-items: center;
+          display: block;
       }
 
 
@@ -1648,19 +1657,21 @@ text-align: center;
     .card {
       width: 100%;
       display: block;
-      margin-bottom: 20px;
+      margin: 40px;
     }
     
     .card img{
       width: 100%;
       float:none;
+      width: 300px;
+      height: 3OOpx;
     }
   }
   
   /* Style the counter cards */
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    padding:10px;
+    /*padding:10px; */
     text-align: center;
     background-color: #ffffff;
     margin-bottom: 10px;
