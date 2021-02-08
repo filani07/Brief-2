@@ -1573,21 +1573,22 @@ ul.locat_icon li a{
  
  .Books .titlepage span {
     color:#141012; 
-     font-size: 17px;
-     line-height: 32px;
+    font-size: 17px;
+    line-height: 32px;
 }
 
 
 .Books .book-box figure {margin: 0px;} 
 
 .Books p {
-     padding: 30px 46px;
-color: #141012;
-font-size: 17px;
-line-height: 30px;
-text-align: center;
+    padding: 30px 46px;
+    color: #141012;
+    font-size: 17px;
+    line-height: 30px;
+    text-align: center;
 }
 
+ /* Start events css */
 
 .Events {
     background-color: #fff;
@@ -1636,6 +1637,7 @@ text-align: center;
     .card .image{
         flex: 40%;
         width: 100%;
+        height: auto;
         float:none;
     }
 
@@ -1685,7 +1687,45 @@ text-align: center;
     font-size: 40px;
   }
   
- 
+  /* Start events css */ 
+
+
+ /* Start pubs css */
+
+ .Events {
+    background-color: #fff;
+    
+}
+.Events .titlepage {
+    text-align: center;
+    padding-bottom: 65px;
+}
+.Events .titlepage h2 {
+    padding: 0px 0px 20px 0px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #b32137;
+    line-height: 50px;
+}
+
+.Events .titlepage span {
+   color:#141012; 
+    font-size: 17px;
+    line-height: 32px;
+}
+
+
+.Events .book-box figure {margin: 0px;} 
+
+.Events p {
+    padding: 30px 46px;
+color: #141012;
+font-size: 17px;
+line-height: 30px;
+text-align: center;
+} 
+
+/* end pubs css */
 
 
  .contact_form {
