@@ -1592,7 +1592,7 @@ ul.locat_icon li a{
 
 .Events {
     background-image: url('../images/zimmerman.jpg');
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     
 }
 .Events .titlepage {
@@ -1710,16 +1710,21 @@ text-align: center;
   
   /* Create four equal columns that sits next to each other */
   .gallerie-row .column {
-    -ms-flex: 33%; /* IE10 */
-    flex: 33%;
+    flex: 25%;
     max-width: 33%;
     padding: 0 4px;
   }
   
   .gallerie-row .column img {
+    opacity: .8;
+    padding: 0 5px 5px;
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
+  }
+  .gallerie-row .column img:hover{
+      opacity: 1;
+      transition: .9s;
   }
   
   /* Responsive layout - makes a two column-layout instead of four columns */
