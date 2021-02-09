@@ -1632,6 +1632,7 @@ text-align: center;
       justify-content: space-between;
       align-items: center;
       flex-direction: row;
+      border-radius: 25px;
 
   }
     .card .image img{
@@ -1639,6 +1640,7 @@ text-align: center;
         width: 100%;
         height: auto;
         float:none;
+        border-radius: 25px;
     }
 
     .card .content{
@@ -1675,7 +1677,7 @@ text-align: center;
     /*padding:10px; */
     text-align: center;
     background-color: #81256C;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     
   }
 
@@ -1693,34 +1695,28 @@ text-align: center;
     text-align: center;
 } 
 /* Start Event Slider Gallery*/
-  @keyframes slidy {
-    0% { left: 0%; }
-    20% { left: 0%; }
-    25% { left: -100%; }
-    45% { left: -100%; }
-    50% { left: -200%; }
-    70% { left: -200%; }
-    75% { left: -300%; }
-    95% { left: -300%; }
-    100% { left: -400%; }
-    }
-    
-    
-    div#slider { overflow: hidden; 
-        margin-bottom: 10px;}
-    div#slider figure img { width: 20%; float: left; }
-    div#slider figure { 
-      position: relative;
-      width: 500%;
-      margin: 0;
-      left: 0;
-      text-align: left;
-      font-size: 0;
-      animation: 20s slidy infinite;
-      
-    }
+  .img-area{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+  }
+
+  .single-img{
+      padding: 0 20px 20px;
+  }
+
+  .single-img img:hover{
+      opacity: .5;
+      transition: .9s;
+  }
     
 /* End Event Slider Gallery*/
+
+
+
   /* end events css */ 
 
 
@@ -1824,6 +1820,7 @@ text-align: center;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    border-radius: 25px;
 
 }
   .coming .image img {
@@ -1832,6 +1829,11 @@ text-align: center;
       height: auto;
       float:none;
       flex-grow: 0;
+      border-radius: 25px;
+  }
+  .coming iframe {
+      
+      border-radius: 25px;
   }
  
 
