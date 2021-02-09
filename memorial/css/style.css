@@ -1672,23 +1672,55 @@ text-align: center;
   
   /* Style the counter cards */
   .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     /*padding:10px; */
     text-align: center;
-    background-color: #ffffff;
+    background-color: #81256C;
     margin-bottom: 10px;
-    border-radius: 50px;
     
   }
 
-  .card h2{
+  .card h2 {
     font-weight: 600;
-    color: #B32137;
+    color: #ffffff;
     font-size: 40px;
   }
 
-
-
+  .card p {
+    padding: 30px 46px;
+    color: #ffffff;
+    font-size: 17px;
+    line-height: 30px;
+    text-align: center;
+} 
+/* Start Event Slider Gallery*/
+  @keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+    }
+    
+    
+    div#slider { overflow: hidden; 
+        margin-bottom: 10px;}
+    div#slider figure img { width: 20%; float: left; }
+    div#slider figure { 
+      position: relative;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      text-align: left;
+      font-size: 0;
+      animation: 20s slidy infinite;
+      
+    }
+    
+/* End Event Slider Gallery*/
   /* end events css */ 
 
 
