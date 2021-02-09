@@ -1591,7 +1591,8 @@ ul.locat_icon li a{
  /* Start events css */
 
 .Events {
-    background-color: #fff;
+    background-image: url('../images/zimmerman.jpg');
+    background-repeat: no-repeat;
     
 }
 .Events .titlepage {
@@ -1695,23 +1696,50 @@ text-align: center;
     text-align: center;
 } 
 /* Start Event Slider Gallery*/
-  .img-area{
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
+/*-------------------------------------*/
 
+.gallerie-row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    width: 90%;
+    justify-content: space-between;
   }
-
-  .single-img{
-      padding: 0 20px 20px;
+  
+  /* Create four equal columns that sits next to each other */
+  .gallerie-row .column {
+    -ms-flex: 33%; /* IE10 */
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 4px;
   }
-
-  .single-img img:hover{
-      opacity: .5;
-      transition: .9s;
+  
+  .gallerie-row .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
   }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .gallerie-row .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .gallerie-row .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  /*-------------------------------------*/
     
 /* End Event Slider Gallery*/
 
@@ -1780,8 +1808,8 @@ text-align: center;
 }
 
  .Pubs {
-    background-color: #fff;
-    
+    background-image: url('../images/zimmerman.jpg');
+    background-repeat: no-repeat;
 }
 .Pubs .titlepage {
     text-align: center;
