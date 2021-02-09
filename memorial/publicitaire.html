@@ -26,10 +26,9 @@
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-
    </head>
    <!-- body -->
-   <body class="main-layout home_page">
+   <body class="main-layout">
       <!-- loader  -->
       <div class="loader_bg">
          <div class="loader"><img src="images/loading.gif" alt="#" /></div>
@@ -53,10 +52,10 @@
                         <div class="limit-box">
                            <nav class="main-menu">
                               <ul class="menu-area-main">
-                                 <li> <a href="index.html">Home</a> </li>
-                                 <li> <a href="about.html">About us</a> </li>
+                                 <li></li> <a href="index.html">Home</a> </li>
+                                 <li><a href="about.html">About us</a> </li>
                                  <li><a href="gallerie.html">Our Events</a></li>
-                                 <li class="active"><a href="publicitaire.html">Publicitaire</a></li>
+                                 <li  class="active" ><a href="publicitaire.html">Publicitaire</a></li>
                                  <li><a href="contact.html">Contact us</a></li>
                                  <li class="mean-last"> <a href="#"><img src="images/search_icon.png" alt="#" /></a> </li>
                                  <li class="mean-last"> <a href="#"><img src="images/top-icon.png" alt="#" /></a> </li>
@@ -68,54 +67,60 @@
                </div>
             </div>
          </div>
-         
+         </div>
          <!-- end header inner -->
       </header>
       <!-- end header -->
-      <section class="slider_section">
-          <div id="myCarousel" class="carousel slide banner-main" data-ride="carousel">
-            <div class="carousel-inner">
-               <div class="carousel-item active">
-                  <img class="first-slide" src="images/banner.jpg" alt="First slide">
-                  <div class="container">
-                     
-                     <div class="my-container carousel-caption">
-                        <img src="images/shuttle.png"></a>
-                        <h1>We are coming soon ...</h1>
-                       <!--   <p>We are almost if you want to get notified<br> subscribe to our mailing list ! </p>-->
-                       
-                        <div id="clockdiv">
-                           <div>
-                              <span class="days"></span>
-                              <div class="smalltext">Days</div>
-                           </div>
-                           <div>
-                              <span class="hours"></span>
-                              <div class="smalltext">Hours</div>
-                           </div>
-                           <div>
-                              <span class="minutes"></span>
-                              <div class="smalltext">Minutes</div>
-                           </div>
-                           <div>
-                              <span class="seconds"></span>
-                              <div class="smalltext">Seconds</div>
-                           </div>
-                        </div>
-
-                           <div class="notify-me">
-                           <input class="Newsletter" placeholder="Email Adress">
-                           <button class="Subscribe">Notify Me !</button>
-                        </div>
-
-                     </div>
+      <div class="about-bg">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                  <div class="abouttitle">
+                     <h2>Our Events</h2>
                   </div>
-                   
                </div>
-               
-              
+            </div>
          </div>
-      </section>
+      
+
+
+      <!-- Pubs -->
+
+      <div class="container">
+                     
+         <div class="my-container">
+            <img src="images/shuttle.png"></a>
+            <h1>We are coming soon ...</h1>
+           <!--   <p>We are almost if you want to get notified<br> subscribe to our mailing list ! </p>-->
+           
+            <div id="clockdiv">
+               <div>
+                  <span class="days"></span>
+                  <div class="smalltext">Days</div>
+               </div>
+               <div>
+                  <span class="hours"></span>
+                  <div class="smalltext">Hours</div>
+               </div>
+               <div>
+                  <span class="minutes"></span>
+                  <div class="smalltext">Minutes</div>
+               </div>
+               <div>
+                  <span class="seconds"></span>
+                  <div class="smalltext">Seconds</div>
+               </div>
+            </div>
+
+               <div class="notify-me">
+               <input class="Newsletter" placeholder="Email Adress">
+               <button class="Subscribe">Notify Me !</button>
+            </div>
+
+         </div>
+      </div>
+   </div>
+      <!-- end Pubs -->
 
       <!--Publicitaire -->
       <div class="Pubs">
@@ -164,7 +169,7 @@
       </div>
    </div>
       <!-- end Publicitaire -->
-   
+
       <!-- footer -->
       <footer>
          <div class="footer">
@@ -208,49 +213,48 @@
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/custom.js"></script>
       <script>
-      function getTimeRemaining(endtime) {
-         const total = Date.parse(endtime) - Date.parse(new Date());
-         const seconds = Math.floor((total / 1000) % 60);
-         const minutes = Math.floor((total / 1000 / 60) % 60);
-         const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
-         const days = Math.floor(total / (1000 * 60 * 60 * 24));
-         
-         return {
-           total,
-           days,
-           hours,
-           minutes,
-           seconds
-         };
-       }
-       
-       function initializeClock(id, endtime) {
-         const clock = document.getElementById(id);
-         const daysSpan = clock.querySelector('.days');
-         const hoursSpan = clock.querySelector('.hours');
-         const minutesSpan = clock.querySelector('.minutes');
-         const secondsSpan = clock.querySelector('.seconds');
-       
-         function updateClock() {
-           const t = getTimeRemaining(endtime);
-       
-           daysSpan.innerHTML = t.days;
-           hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-           minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-           secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-       
-           if (t.total <= 0) {
-             clearInterval(timeinterval);
-           }
-         }
-       
-         updateClock();
-         const timeinterval = setInterval(updateClock, 1000);
-       }
-       
-       const deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
-       initializeClock('clockdiv', deadline);
-      </script>
-
+         function getTimeRemaining(endtime) {
+            const total = Date.parse(endtime) - Date.parse(new Date());
+            const seconds = Math.floor((total / 1000) % 60);
+            const minutes = Math.floor((total / 1000 / 60) % 60);
+            const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
+            const days = Math.floor(total / (1000 * 60 * 60 * 24));
+            
+            return {
+              total,
+              days,
+              hours,
+              minutes,
+              seconds
+            };
+          }
+          
+          function initializeClock(id, endtime) {
+            const clock = document.getElementById(id);
+            const daysSpan = clock.querySelector('.days');
+            const hoursSpan = clock.querySelector('.hours');
+            const minutesSpan = clock.querySelector('.minutes');
+            const secondsSpan = clock.querySelector('.seconds');
+          
+            function updateClock() {
+              const t = getTimeRemaining(endtime);
+          
+              daysSpan.innerHTML = t.days;
+              hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+              minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+              secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+          
+              if (t.total <= 0) {
+                clearInterval(timeinterval);
+              }
+            }
+          
+            updateClock();
+            const timeinterval = setInterval(updateClock, 1000);
+          }
+          
+          const deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+          initializeClock('clockdiv', deadline);
+         </script>
    </body>
 </html>
