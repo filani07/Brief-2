@@ -1949,10 +1949,6 @@ text-align: center;
 /* End Event Slider Gallery*/
 
 
-
- /* end events css */ 
-
-
 /* Start pubs css */
 
 
@@ -1989,23 +1985,30 @@ text-align: center;
 
 
 
-.Newsletter{
+.news-letter{
    display: block;
-   width: 40vw;
+   width: 460px;
    padding: 10px;
    margin: 25px;
 }
-.Subscribe{
-   padding: 10px 46px;
-   border: #0e0c0c solid 1px;
-   background: #0e0c0c;
-   color: #fff;
+.notif-me:hover{
+   background: #ffffff;
+   color: #000;
 }
 
+.notif-me{
+    padding: 10px 15px;
+    border: #0e0c0c solid 1px;
+    background: #0e0c0c;
+    color: #fff;
+ }
+
+ 
 .my-container{
    /* background-color: #b32137; */
    background-image: url(../images/banner.jpg);
    background-repeat: no-repeat;
+   background-size: cover;
    height: 600px;
    display: flex;
    flex-direction: column;
