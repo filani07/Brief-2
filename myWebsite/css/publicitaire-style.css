@@ -2075,7 +2075,7 @@ text-align: center;
 
  /* Remove extra left and right margins, due to padding */
  
- .coming {
+ .card-pubs {
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -2083,7 +2083,7 @@ text-align: center;
    border-radius: 25px;
 
 }
- .coming .image img {
+ .card-pubs .image img {
      flex: 40%;
      width: 100%;
      height: auto;
@@ -2091,7 +2091,7 @@ text-align: center;
      flex-grow: 0;
      border-radius: 25px;
  }
- .coming iframe {
+ .card-pubs iframe {
      
   flex: 40%; 
    width: 100%;
@@ -2100,7 +2100,7 @@ text-align: center;
 
 
 
- .coming .content{
+ .card-pubs .content{
      flex: 60%;
  }
  .read-more-cm {
@@ -2135,7 +2135,7 @@ text-align: center;
    /* #iframe-maps{
        width: 100%;
    } */
-   .coming {
+   .card-pubs {
        flex-direction:column;
        flex-wrap: wrap;
        align-items: center;
@@ -2144,20 +2144,20 @@ text-align: center;
 
 
 
- .coming {
+ .card-pubs {
    width: 100%;
    display: block;
    margin: 40px;
  }
  
- .coming img{
+ .card-pubs img{
    width: 100%;
    float:none;
    width: 300px;
    height: 3OOpx;
  }
 
- .coming iframe{
+ .card-pubs iframe{
    width: 100%;
    height: 3OOpx;
  }
@@ -2169,7 +2169,7 @@ text-align: center;
 /* End Responsive @media  */
 
 /* Style the counter coming */
-.coming {
+.card-pubs {
  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
  /*padding:10px; */
  text-align: center;
@@ -2178,7 +2178,7 @@ text-align: center;
  
 }
 
-.coming h2{
+.card-pubs h2{
  font-weight: 600;
  color: #ffffff;
  font-size: 40px;

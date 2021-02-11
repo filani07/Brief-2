@@ -1816,11 +1816,11 @@ margin-top: 90px;
 .Events .book-box figure {margin: 0px;} 
 
 .Events p {
-   padding: 30px 46px;
-color: #141012;
-font-size: 17px;
-line-height: 30px;
-text-align: center;
+    padding: 30px 46px;
+    color: #141012;
+    font-size: 17px;
+    line-height: 30px;
+    text-align: center;
 }
 
 
@@ -1833,14 +1833,12 @@ text-align: center;
      align-items: center;
      flex-direction: row;
      border-radius: 25px;
-
  }
    .card-evants .image img{
        flex: 40%;
        width: 100%;
        height: auto;
        float:none;
-       border-radius: 25px;
    }
 
    .card-evants .content{
@@ -1876,20 +1874,20 @@ text-align: center;
  .card-evants {
    /*padding:10px; */
    text-align: center;
-   background:linear-gradient(45deg,#B32137 ,#81256C );
+   background:linear-gradient(45deg,#ffffff ,#fae9f6 );
    margin-bottom: 50px;
    
  }
 
  .card-evants h2 {
    font-weight: 600;
-   color: #ffffff;
+   color: #000000;
    font-size: 40px;
  }
 
  .card-evants p {
    padding: 30px 46px;
-   color: #ffffff;
+   color: #000000;
    font-size: 17px;
    line-height: 30px;
    text-align: center;
@@ -1912,15 +1910,20 @@ text-align: center;
    max-width: 33%;
    padding: 0 4px;
  }
+   {
+   overflow: hidden;
+   border-style: solid;
+ }
  
  .gallerie-row .column img {
-   border-style: solid;
+   
    opacity: .7;
    /* padding: 0 5px 5px; */ 
    margin-top: 8px;
    vertical-align: middle;
    width: 100%;
  }
+
  .gallerie-row .column img:hover{
      opacity: 1;
      transition: .9s;
