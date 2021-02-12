@@ -1971,6 +1971,14 @@ text-align: center;
  .card-pubs .content{
      flex: 50%;
  }
+
+ .card-pubs .content address{
+    padding: 30px 46px;
+    color: #ffffff;
+    font-size: 17px;
+    line-height: 30px;
+    text-align: center;
+ }
  
 .read-more-cm a{
     width: 200px;
