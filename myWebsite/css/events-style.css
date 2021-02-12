@@ -1792,6 +1792,7 @@ margin-top: 90px;
 .Events {
    background-image: url('../images/zimmerman.jpg');
    background-repeat: repeat;
+   background-attachment: fixed;
    
 }
 .Events .titlepage {
@@ -1835,18 +1836,18 @@ margin-top: 90px;
      border-radius: 25px;
  }
    .card-evants .image img{
-       flex: 40%;
+       flex: 50%;
        width: 100%;
        height: auto;
        float:none;
    }
 
    .card-evants .content{
-       flex: 60%;
+       flex: 50%;
    }
  
  /* Responsive columns */
- @media screen and (max-width: 770px) {
+ @media screen and (max-width: 1000px) {
      .card-evants {
          flex-direction:column;
          flex-wrap: wrap;
@@ -1910,18 +1911,20 @@ margin-top: 90px;
    max-width: 50%;
    padding: 0 4px;
  }
- .imagediv .imagediv-1{
+
+ /* .imagediv .imagediv-1{
    overflow: hidden;
    border-style: solid;
- }
+ } */
  
  .gallerie-row .column img {
    
-   opacity: .7;
+   opacity: .8;
    /* padding: 0 5px 5px; */ 
    margin-top: 8px;
    vertical-align: middle;
    width: 100%;
+   border: solid 1px #000;
  }
 
  .gallerie-row .column img:hover{
@@ -1930,17 +1933,9 @@ margin-top: 90px;
      transform: scale(1.04); 
  }
  
- /* Responsive layout - makes a two column-layout instead of four columns */
- @media screen and (max-width: 800px) {
-   .gallerie-row .column {
-     -ms-flex: 50%;
-     flex: 50%;
-     max-width: 50%;
-   }
- }
  
  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
- @media screen and (max-width: 600px) {
+ @media screen and (max-width: 775px) {
    .gallerie-row .column {
      -ms-flex: 100%;
      flex: 100%;
