@@ -1787,166 +1787,6 @@ margin-top: 90px;
 
 
 
-/* Start events css */
-
-.Events {
-   background-image: url('../images/zimmerman.jpg');
-   background-repeat: repeat;
-   
-}
-.Events .titlepage {
-   text-align: center;
-   padding-bottom: 65px;
-}
-.Events .titlepage h2 {
-   padding: 0px 0px 20px 0px;
-   font-size: 50px;
-   font-weight: bold;
-   color: #b32137;
-   line-height: 50px;
-}
-
-.Events .titlepage span {
-  color:#141012; 
-   font-size: 17px;
-   line-height: 32px;
-}
-
-
-.Events .book-box figure {margin: 0px;} 
-
-.Events p {
-   padding: 30px 46px;
-color: #141012;
-font-size: 17px;
-line-height: 30px;
-text-align: center;
-}
-
-
-
- /* Remove extra left and right margins, due to padding */
- 
- .card {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     flex-direction: row;
-     border-radius: 25px;
-
- }
-   .card .image img{
-       flex: 40%;
-       width: 100%;
-       height: auto;
-       float:none;
-       border-radius: 25px;
-   }
-
-   .card .content{
-       flex: 60%;
-   }
- 
- /* Responsive columns */
- @media screen and (max-width: 770px) {
-     .card {
-         flex-direction:column;
-         flex-wrap: wrap;
-         align-items: center;
-         display: block;
-     }
-
-
- 
-   .card {
-     width: 100%;
-     display: block;
-     margin: 40px;
-   }
-   
-   .card img{
-     width: 100%;
-     float:none;
-     width: 300px;
-     height: 30Opx;
-   }
- }
- 
- /* Style the counter cards */
- .card {
-   /*padding:10px; */
-   text-align: center;
-   background:linear-gradient(45deg,#B32137 ,#81256C );
-   margin-bottom: 50px;
-   
- }
-
- .card h2 {
-   font-weight: 600;
-   color: #ffffff;
-   font-size: 40px;
- }
-
- .card p {
-   padding: 30px 46px;
-   color: #ffffff;
-   font-size: 17px;
-   line-height: 30px;
-   text-align: center;
-} 
-/* Start Event Slider Gallery*/
-/*-------------------------------------*/
-
-.gallerie-row {
-   display: flex;
-   flex-wrap: wrap;
-   padding: 0 4px;
-   width: 90%;
-   justify-content: space-between;
-   margin:0px auto;
- }
- 
- /* Create four equal columns that sits next to each other */
- .gallerie-row .column {
-   flex: 25%;
-   max-width: 33%;
-   padding: 0 4px;
- }
- 
- .gallerie-row .column img {
-   border-style: solid;
-   opacity: .7;
-   /* padding: 0 5px 5px; */ 
-   margin-top: 8px;
-   vertical-align: middle;
-   width: 100%;
- }
- .gallerie-row .column img:hover{
-     opacity: 1;
-     transition: .9s;
-     transform: scale(1.04); 
- }
- 
- /* Responsive layout - makes a two column-layout instead of four columns */
- @media screen and (max-width: 800px) {
-   .gallerie-row .column {
-     -ms-flex: 50%;
-     flex: 50%;
-     max-width: 50%;
-   }
- }
- 
- /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
- @media screen and (max-width: 600px) {
-   .gallerie-row .column {
-     -ms-flex: 100%;
-     flex: 100%;
-     max-width: 100%;
-   }
- }
- /*-------------------------------------*/
-   
-/* End Event Slider Gallery*/
 
 
 /* Start pubs css */
@@ -1997,28 +1837,27 @@ text-align: center;
 }
 
 .notif-me{
-    padding: 10px 15px;
+    padding: 10px 25px;
     border: #0e0c0c solid 1px;
     background: #0e0c0c;
     color: #fff;
  }
 
  
-.my-container{
+.coming-soon{
    /* background-color: #b32137; */
    background-image: url(../images/banner.jpg);
    background-repeat: no-repeat;
    background-size: cover;
-   height: 600px;
+   height: 700px;
    display: flex;
    flex-direction: column;
-   flex-wrap: wrap;
    align-items: center;
-   justify-content: center;
-   width: 100%;
+   justify-content:center;
+   background-attachment: fixed;
 }
 
-.my-container  h2 {
+.coming-soon  h2 {
    color: #fff;
    text-transform: uppercase;
    font-size: 40px;
@@ -2029,13 +1868,38 @@ text-align: center;
    margin-top: 25px;
    width: 80%;
 }
-.my-container p
+.coming-soon p
 {
    font-size: 18px;
    line-height: 30px;
    color: #fff;
    margin-bottom: 25px;
+   text-align: center;
 }
+
+/* Start Responsive @media  */
+@media screen and (max-width: 490px) {
+
+    #clockdiv > div{
+        background: rgba(255, 255, 255, 0);
+     }
+     #clockdiv{
+        color:#fbfbfb;
+     }
+     
+     .news-letter{
+        width: 360px;
+        height: 60px;
+
+     }
+
+     .coming-soon p
+    {
+        display: none;
+    }
+ 
+ }
+ /* End Responsive @media  */
 
 
 .Pubs {
@@ -2076,39 +1940,37 @@ text-align: center;
  /* Remove extra left and right margins, due to padding */
  
  .card-pubs {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   flex-direction: row;
-   border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 25px;
 
 }
- .card-pubs .image img {
-     flex: 40%;
-     width: 100%;
-     height: auto;
-     float:none;
-     flex-grow: 0;
-     border-radius: 25px;
+ .card-pubs .image  {
+     
+    flex: 50%;
+ }
+ .card-pubs .image  img{
+    width: 100%;
+    height: auto;
+    float:none;
+    flex-grow: 0;
+    border-radius: 25px;
  }
  .card-pubs iframe {
      
-  flex: 40%; 
+  flex: 50%; 
    width: 100%;
-   border-radius: 25px;
+   border-radius: 0 25px 25px 0 ;
  }
 
 
 
  .card-pubs .content{
-     flex: 60%;
+     flex: 50%;
  }
- .read-more-cm {
  
- }
-
-
-
 .read-more-cm a{
     width: 200px;
     font-size: 17px;
