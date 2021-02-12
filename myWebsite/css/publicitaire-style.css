@@ -1891,7 +1891,7 @@ margin-top: 90px;
      }
      
      .news-letter{
-        width: 360px;
+        width: 352px;
         height: 60px;
 
      }
@@ -1964,7 +1964,7 @@ text-align: center;
  }
  .card-pubs iframe {
      
-  flex: 50%; 
+   flex: 50%; 
    width: 100%;
    border-radius: 0 25px 25px 0 ;
  }

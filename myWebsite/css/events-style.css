@@ -1829,6 +1829,7 @@ margin-top: 90px;
  /* Remove extra left and right margins, due to padding */
  
  .card-evants {
+     padding: 0%;
      display: flex;
      justify-content: space-between;
      align-items: center;
@@ -1836,14 +1837,14 @@ margin-top: 90px;
      border-radius: 25px;
  }
    .card-evants .image img{
-       flex: 50%;
+       flex: 52%;
        width: 100%;
-       height: auto;
-       float:none;
+       border-left: solid 1px black;
+       border-right: solid 1px black;
    }
 
    .card-evants .content{
-       flex: 50%;
+       flex: 48%;
    }
  
  /* Responsive columns */
@@ -1863,11 +1864,12 @@ margin-top: 90px;
      margin: 40px;
    }
    
-   .card-evants img{
+   .card-evants .image img{
      width: 100%;
-     float:none;
-     width: 300px;
-     height: 30Opx;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    border-left:  0px;
+    border-right:  0pX;
    }
  }
  
